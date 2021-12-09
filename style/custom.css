@@ -1,0 +1,27 @@
+html{
+    scroll-padding-top: 200px;
+    scroll-behavior: smooth;
+}
+.overflow {
+    overflow: auto;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px #000000;
+}
+.jumbotron {
+    background-size: cover;
+    background-position: center;
+    padding: 40vh 0;
+   
+}
+.webp .jumbotron {
+    background-image: url("/img/banner.webp");
+} 
+.no-webp .jumbotron{
+    background-image: url("/img/banner.jpg");
+}
+.no-js .jumbotron{
+    background-image: url("/img/banner.jpg");
+}
+    
