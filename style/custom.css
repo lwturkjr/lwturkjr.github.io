@@ -6,22 +6,109 @@ html{
     overflow: auto;
 }
 
+@font-face {
+    font-family: OpenSansCondensedRegular;
+    src: url(/fonts/OpenSansCondensedRegular.ttf);
+ }
+ @font-face {
+    font-family: OpenSansCondensedBold;
+    src: url(/fonts/OpenSansCondensedBold.ttf);
+ } 
+
 .text-shadow {
     text-shadow: 2px 2px #000000;
 }
+.box-shadow {
+    box-shadow: 2px 2px #000000;
+}
+
 .jumbotron {
     background-size: cover;
     background-position: center;
-    padding: 40vh 0;
-   
+    padding: 20vh 0;  
 }
 .webp .jumbotron {
-    background-image: url("/img/banner.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("/img/banner.webp");
 } 
 .no-webp .jumbotron{
-    background-image: url("/img/banner.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("/img/banner.jpg");
 }
 .no-js .jumbotron{
-    background-image: url("/img/banner.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("/img/banner.jpg");
 }
+.navbar-brand {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: "OpenSansCondensedBold",sans-serif;
+}
+
+.button {
+    text-transform: uppercase;
+    font-family: "OpenSansCondensed",sans-serif;
+    background-color: transparent;
+    border-radius: 1px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 16px 31px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+    transition: background-color 0.5s ease 0s;
+    font-weight: bold;
     
+ }
+ .button:hover, .button:active {
+    background-color: #ffffff;
+    color: #1b1d27;
+    transition: background-color 0.5s ease 0s;
+ }
+ .button:active {
+     position:relative;
+     top:1px;
+ }
+
+ .site-image {
+    max-width: 100%;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(125,125,125,0.5);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(125,125,125,0.5);
+    box-shadow: 0px 0px 10px 1px rgba(125,125,125,0.5);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+ }
+ .site-image:hover {
+    top: -7px;
+ }
+
+ .reverse_button {
+    text-transform: uppercase;
+    font-family: "OpenSansCondensed",sans-serif;
+    background-color: transparent;
+    border-radius: 1px;
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 16px;
+    padding: 16px 31px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+    transition: background-color 0.5s ease 0s;
+    font-weight: bold;
+    
+ }
+ .reverse_button:hover, .button:active {
+    background-color: #000000;
+    color: #ffffff;
+    transition: background-color 0.5s ease 0s;
+ }
+ .reverse_button:active {
+     position:relative;
+     top:1px;
+ }

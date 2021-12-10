@@ -24,19 +24,91 @@
 <body>
     <!-- Header -->
     <section>
-        <nav class="navbar navbar-expand-lg navbar-dark p-5 fixed-top bg-secondary text-shadow">
-            <div class="container">
-                <a href="#" class="navbar-brand">Lloyd W. Turk Jr.</a>
-            </div>
-        </nav>
+        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark p-2 fixed-top bg-dark bg-gradient m-auto">
+                <a href="#" class="navbar-brand text-shadow px-5">Lloyd W. Turk Jr.</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+ 
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto px-5">
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#resume" class="nav-link">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>   
     </section>
     <!-- Main banner -->
     <section class="jumbotron text-light">
         <div class="container">
-            <h1>Web Portfolio</h1>
-            <a href="#" target=”_blank” class="jumbotron-button">View This Site's Code</a>
+            <div class="row">
+                <div class="col-md p-3 m-auto text-center">
+                    <a href="https://github.com/lwturkjr/lwturkjr.github.io" target=”_blank” class="rounded button d-inline-block">View This Website's Code</a>
+                </div>
+                <div class="col-md bg-dark rounded-3 box-shadow">
+                    <h2 class="text-center p-2">Portfolio and Online Resume</h2>
+                    <p>
+                        Here you will find my a small portfoliio of websites and a link to my github where I have other projects I've worked on, as well as a copy of my resume.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
-
+    <section id="portfoliio" class="bg-light bg-gradient py-3">
+        <div class="container">
+            <h2 class="text-center">Website Portfolio</h2>
+            <div class="row">
+                <div class="col">
+                    <picture>
+                        <source srcset="/img/samples/ste_sample.webp" type="image/webp">
+                        <source srcset="/img/samples/ste_sample.jpg" type="image/jpg">
+                        <a href="https://handliner.com"><img class="w-auto img-fluid site-image" width="350px" height="212px" src="/img/samples/ste_sample.jpg" alt="HTML Icon" loading="lazy" /></a>
+                    </picture>
+                    <a href="https://handliner.com"><h4>handliner.com</h4></a>
+                    <p class="text-secondary">HTML/CSS | Bootstrap | PHP | JS</p>
+                    <hr />
+                    <p> 
+                        Custom designed website for a local business in DeLand FL 
+                    </p>
+                    <p>
+                        The site is hosted on a VPS I manage for the client. Running LEP stack (Linux NGINX PHP).
+                    </p>
+                    <a class="reverse_button rounded" href="https://handliner.com" target=”_blank” role="button">View Site</a>
+                </div>
+                <div class="col">
+                    <picture>
+                        <source srcset="/img/samples/placeholder_sample.webp" type="image/webp">
+                        <source srcset="/img/samples/placeholder_sample.jpg" type="image/jpg">
+                        <a href="#"><img class="w-auto img-fluid site-image" width="350px" height="212px" src="/img/samples/placeholder_sample.jpg" alt="HTML Icon" loading="lazy" /></a>
+                    </picture>
+                    <a href="#"><h4>example.com</h4></a>
+                    <p class="text-secondary"> |  |  | </p>
+                    <hr />
+                    <p class="">Place Holder Text</p>
+                    <a class="reverse_button rounded" href="#" target=”_blank” role="button">View Site</a>
+                </div>
+                <div class="col">
+                    <picture>
+                        <source srcset="/img/samples/placeholder_sample.webp" type="image/webp">
+                        <source srcset="/img/samples/placeholder_sample.jpg" type="image/jpg">
+                        <a href="#"><img class="w-auto img-fluid site-image" width="350px" height="212px" src="/img/samples/placeholder_sample.jpg" alt="HTML Icon" loading="lazy" /></a>
+                    </picture>
+                    <a href="#"><h4>example.com</h4></a>
+                    <p class="text-secondary"> |  |  | </p>
+                    <hr />
+                    <p class="">Place Holder Text</p>
+                    <a class="reverse_button rounded" href="#" target=”_blank” role="button">View Site</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </body>
 </html>
