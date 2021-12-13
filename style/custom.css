@@ -8,11 +8,11 @@ html{
 
 @font-face {
     font-family: OpenSansCondensedRegular;
-    src: url(/fonts/OpenSansCondensedRegular.ttf);
+    src: url(/style/fonts/OpenSansCondensedRegular.ttf);
  }
  @font-face {
     font-family: OpenSansCondensedBold;
-    src: url(/fonts/OpenSansCondensedBold.ttf);
+    src: url(/style/fonts/OpenSansCondensedBold.ttf);
  } 
 
 .text-shadow {
